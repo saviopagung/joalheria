@@ -17,7 +17,7 @@ public class JewelController {
     @Autowired
     private IServiceJewel service;
 
-    @PostMapping()
+    @PostMapping
     public ResponseEntity<Jewel> inserir(@RequestBody Jewel jewel){
         return new ResponseEntity<>(
                 service.insert(jewel),
